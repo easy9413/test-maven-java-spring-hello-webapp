@@ -34,7 +34,7 @@ pipeline {
       agent any
       steps {
         sh 'docker image tag myweb easy9413/myweb:$BUILD_NUMBER'
-				sh 'docker image tag myweb easy9413/myweb:latest'
+        sh 'docker image tag myweb easy9413/myweb:latest'
       }
     }
     stage('Publish Docker Image') {
